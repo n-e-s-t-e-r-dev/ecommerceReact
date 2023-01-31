@@ -60,15 +60,15 @@ const ProductsId = () => {
                             </section>
 
                         </div>
-                        <button className='addToCar'>Add Cart <i class='bx bx-cart-add'></i></button>
+                        <button className='addToCar'>Add Cart <i className='bx bx-cart-add'></i></button>
                         <h3 className='container-descripcion'> description: {product.description}</h3>
                     </Col>
                 </div>
                 <div className='container-flex'>
+                    <ListGroup as="ol" numbered
+                        >
                     {productsCategories.map((category) => (
-                        <ListGroup as="ol" numbered key={category.id}
-                            onClick={() => navigate(`/products/${category.id}`)}>
-                            <div className='similar-content'>
+                            <div className='similar-content'  key={category.id} onClick={() => navigate(`/products/${category.id}`)}>
                                 <div className='container-image-similar'>
                                     <ListGroup.Item as="li"><img className='img-fluid' src={category.images[0].url} alt="product" /></ListGroup.Item>
                                 </div>
@@ -81,15 +81,15 @@ const ProductsId = () => {
                                             <ListGroup.Item as="li"> Price {category.price}</ListGroup.Item>
                                         </div>
                                         <div className='car-container-similar'>
-                                            <i class='bx bx-cart-add'></i>
+                                            <i className='bx bx-cart-add'></i>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
 
-                        </ListGroup>
-                    ))}
+))}
+</ListGroup>
                 </div>
 
             </Row>

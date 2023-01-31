@@ -43,7 +43,7 @@ const Home = () => {
                 <Col lg={3}>
                     <ListGroup>
                         <ListGroup>
-                            <Price />
+                            
                         </ListGroup>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
@@ -58,7 +58,7 @@ const Home = () => {
                             </Accordion.Item>
                         </Accordion>
                     </ListGroup>
-
+                    <Price/>
                 </Col>
                 <Col lg={9}>
                     <Row xs={1} md={2} lg={3} className="g-4">
@@ -79,7 +79,7 @@ const Home = () => {
                                                 </Card.Text>
                                             </div>
                                             <div className='car-container'>
-                                                <i class='bx bx-cart-add'></i>
+                                                <i className='bx bx-cart-add'></i>
                                             </div>
                                         </div>
                                     </Card.Body>
