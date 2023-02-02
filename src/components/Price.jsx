@@ -10,12 +10,12 @@ const Price = () => {
     const { register, handleSubmit } = useForm()
 
     const submit = (data) => {
-        console.log(data)
+        console.log(price)
     };
 
     return (
         <Form onSubmit={handleSubmit(submit)}>
-            <Accordion defaultActiveKey="0">
+            <Accordion className='container-filter' defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Price</Accordion.Header>
                     <Accordion.Body>
@@ -24,7 +24,7 @@ const Price = () => {
                             <Form.Control type="number"
                                 placeholder="enter max price"
                                 {...register("price")}
-                                value={minPrice}
+                                value={price}
                                 onChange={(e) => setPrice(e.target.value)} />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -32,13 +32,16 @@ const Price = () => {
                             <Form.Control
                                 type="number"
                                 placeholder="Enter min price" {...register("minPrice")}
-                                value={price}
+                                value={minPrice}
                                 onChange={(e) => setMinPrice(e.target.value)}
                             />
                             <Form.Text className="text-muted">
                                 Filter prices.
                             </Form.Text>
                         </Form.Group>
+                        <Button className='container' style={{ color: "red" }} variant="primary" type="submit">
+                            Submit
+                        </Button>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

@@ -21,34 +21,20 @@ const Home = () => {
             .then((res) => setCategories(res.data))
     }, [])
 
-    console.log()
-
     return (
-        <div>
-
-            <h1> home</h1>
+        <div className='container-home'>
             <InputGroup className="mb-3">
-                <Form.Control
-                    placeholder="Recipient's username"
-                    aria-label="Recipient's username"
-                    aria-describedby="basic-addon2"
-                    value={searchName}
-                    onChange={e => setSearchName(e.target.value)}
-                />
-                <Button variant="outline-secondary" id="button-addon2" onClick={() => dispatch(productFilterTitleThunk(searchName))}>
-                    Button
-                </Button>
             </InputGroup>
-            <Row>
+            <Row >
                 <Col lg={3}>
                     <ListGroup>
                         <ListGroup>
-                            
+
                         </ListGroup>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>Categories</Accordion.Header>
-                                <Accordion.Body>
+                                <Accordion.Header className='container-price-acordion-category'>Categories</Accordion.Header>
+                                <Accordion.Body >
                                     {categories.map((category) => (
                                         <Dropdown.Item
                                             key={category.id}
@@ -58,9 +44,19 @@ const Home = () => {
                             </Accordion.Item>
                         </Accordion>
                     </ListGroup>
-                    <Price/>
+                    <Price />
                 </Col>
                 <Col lg={9}>
+                    <Form.Control
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        value={searchName}
+                        onChange={e => setSearchName(e.target.value)}
+                    />
+                    <Button style={{ color: "red" }} variant="outline-secondary" id="button-addon2" onClick={() => dispatch(productFilterTitleThunk(searchName))}>
+                        Button
+                    </Button>
                     <Row xs={1} md={2} lg={3} className="g-4">
                         {products.map((product) => (
                             <Col key={product.id}>

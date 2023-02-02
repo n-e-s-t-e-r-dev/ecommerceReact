@@ -1,210 +1,330 @@
-.container-price{
-    padding: 2rem;
+.container-price {
+  padding: 2rem;
 }
-.container-categories{
-    padding: 2rem;
+.container-categories {
+  padding: 2rem;
 }
-.price-inpu{
-    padding: 0 2rem 2rem 2rem;
+.price-inpu {
+  padding: 0 2rem 2rem 2rem;
 }
-.categories-id{
-    padding: 0 2rem 2ren 2rem;
+.categories-id {
+  padding: 0 2rem 2ren 2rem;
 }
-.car-container{
-    background: red;
-    border-radius: 50%;
-    bottom: 30px;
-    color: #fff;
-    height: 50px;
-    line-height: 0;
-    position: absolute;
-    right: 30px;
-    width: 50px;
-    font-size: 35px;
-    text-align: center;
-  
+.car-container {
+  background: red;
+  border-radius: 50%;
+  bottom: 30px;
+  color: #fff;
+  height: 50px;
+  line-height: 0;
+  position: absolute;
+  right: 30px;
+  width: 50px;
+  font-size: 35px;
+  text-align: center;
 }
 
-.car-container i{
+.car-container i {
+  position: relative;
+  bottom: -6px;
+}
+.container-car-price {
+  display: flex;
+  bottom: 0rem;
+  justify-content: space-between;
+}
+.g-3 {
+  background-color: aliceblue;
+  padding: 2rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+.card-body {
+  background-color: white;
+  height: 12rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.container-quantity {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.container-image {
+  height: 23rem;
+  background-color: rgb(245, 245, 250);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.container-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container-superior {
+  justify-content: center;
+  align-items: center;
+}
+
+.container-data {
+  padding: 2rem;
+}
+
+.addToCar {
+  width: 18rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.container-descripcion {
+  padding-top: 2rem;
+}
+
+.similar-content {
+  width: 23rem;
+  padding: 2rem;
+}
+.car-container-similar {
+  width: 4rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+}
+.container-car-prices {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0rem;
+ 
+}
+
+.container-image-similar {
+  display: flex;
+  height: 23rem;
+  background-color: rgb(245, 245, 250);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.container-image-similar {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container-body {
+  background-color: rgba(0, 0, 0, 0.79);
+  height: 11rem;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-social i {
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+}
+.container-social {
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.container-body h3 {
+  color: #fff;
+  padding-top: 4rem;
+}
+
+.buttom-home {
+  border: none;
+  background-color: rgba(155, 28, 28, 0.008);
+  display: flex;
+  align-items: center;
+}
+.container-punto {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+}
+.container-title-padding-right {
+  padding-left: 1rem;
+}
+.container-product {
+  padding-top: 3rem;
+}
+.container-purchases {
+  margin-top: 5rem;
+}
+.container-home {
+  margin-top: 5rem;
+}
+
+.container-login {
+  padding: 4rem 13rem 0rem 13rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-price-acordion {
+  position: fixed;
+  top: 13rem;
+}
+
+.cart-product-add {
+  margin-top: 1rem;
+  list-style: none;
+}
+.cart-product-add img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.cart-product-add h3 {
+  font-size: 10px;
+}
+.container-cart-description{
+    display: flex;
+}
+.scroll{
+    height: 400px;
+    overflow-y: scroll;
+}
+.container-buttom-cart-add{
+    position: static;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-buttom-cart-add button{
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    color: red;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-total-list{
+    height: 2rem;
+    display: flex;
+    
+}
+.container-total-list h3{
     position: relative;
-    bottom: -6px;
-}
-.container-car-price{
-    display: flex;
-    bottom: 0rem;
-    justify-content: space-between;
-    
-}
-.g-3{
-    background-color: aliceblue;
-    padding: 2rem;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
-}
-.card-body{
-    background-color: white;
-    height: 12rem;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 1rem 1rem;
-}
-
-.container-quantity{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.container-image{
-    height: 23rem;
-    background-color: rgb(245, 245, 250);
-    border-radius: .5rem;
-    padding: 2rem;
-}
-
-.container-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.container-superior{
-    justify-content: center;
-    align-items: center;
-}
-
-.container-data{
-    padding: 2rem;
-}
-
-.addToCar{
-    width: 18rem;
-    border: none;
-    background-color: red;
-    color: #fff;
-    padding: 1rem;
-    font-size: 20px;
-}
-
-.container-descripcion{
-    padding-top: 2rem;
-}
-
-.similar-content{
-    width: 23rem;
-    padding: 2rem;
-}
-.car-container-similar{
-    width: 4rem;
-    border: none;
-    background-color: red;
-    color: #fff;
-    padding: 1rem;
-    font-size: 20px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 20px;
-}
-.container-car-prices{
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-image-similar{
-    display: flex;
-    height: 23rem;
-    background-color: rgb(245, 245, 250);
-    border-radius: .5rem;
-    padding: 2rem;
-}
-
-.container-image-similar{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.container-body{
-    background-color: rgba(0, 0, 0, 0.79);
-    height: 11rem;
-    color: #fff;
-    justify-content: center;
+    left: 10rem;
+    bottom: -8px;
     text-align: center;
 }
 
-.container-social i{
-    align-items: center;
-    color: #fff;
-    font-size: 50px;
+.container-img-cart img{
+    object-fit: contain;
 }
-.container-social{
-    justify-content: center;
-    margin: 0px auto;
+.container-cart-title{
+    padding: 0rem 0 0 1rem;
+    margin-top: 1rem;
 }
-
-.container-body h3{
-    color: #fff;
-    padding-top: 4rem;
+.container-cart-title h3{
+    font-size: 10px;
+    width: 10rem;
 }
-
-.buttom-home{
+.container-cart-trash button{
+    margin-top: 1rem;
     border: none;
-    background-color: rgba(255, 255, 255, 0.008);
-    display: flex;
-    align-items: center;
-    
+    color: red;
 }
-.container-punto{
-    width: 5px;
-    height: 5px;
-    background-color: red;
-    border-radius: 50%;
-}
-.container-title-padding-right{
-    padding-left:  1rem;
-}
+
 
 @media (min-width: 570px) {
-    .container-flex{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .addToCar{
-        width: 30rem;
-        border: none;
-        background-color: red;
-        color: #fff;
-        padding: 1rem;
-        font-size: 20px;
-    }
-    .container-image{
-        height: 29rem;
-        background-color: rgb(245, 245, 250);
-        border-radius: .5rem;
-        padding: 2rem;
-    }
+  .container-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .addToCar {
+    width: 30rem;
+    border: none;
+    background-color: red;
+    color: #fff;
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .container-image {
+    height: 29rem;
+    background-color: rgb(245, 245, 250);
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
 }
 @media (min-width: 760px) {
-    .container-flex{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .addToCar{
-        width: 40rem;
-        border: none;
-        background-color: red;
-        color: #fff;
-        padding: 1rem;
-        font-size: 20px;
-    }
-    .container-image{
-        height: 29rem;
-        background-color: rgb(245, 245, 250);
-        border-radius: .5rem;
-        padding: 2rem;
-    }
+  .container-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .addToCar {
+    width: 40rem;
+    border: none;
+    background-color: red;
+    color: #fff;
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .container-image {
+    height: 29rem;
+    background-color: rgb(245, 245, 250);
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
 }
 
 @media (min-width: 991px) {
-    .container-superior{
-        display: flex;
-    }
+  .addToCar {
+    width: 31rem;
+  }
+  .container-superior {
+    display: flex;
+  }
+  .container-absolute {
+    position: absolute;
+    top: 27rem;
+  }
+  .container-descripcion {
+    width: 29rem;
+    position: absolute;
+    top: 10rem;
+    font-size: 13px;
+  }
+  .container-absolute-title {
+    position: absolute;
+    top: 7rem;
+  }
+  .container-superior {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  /* Carousel*/
+  .item{
+    padding: 2rem;
+  }
+  .item img {
+    width: 300px;
+    height: 340px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
