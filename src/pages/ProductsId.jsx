@@ -67,7 +67,7 @@ const ProductsId = () => {
                 </Col>
                 <Col className='container-data' lg={6}>
                     <div className='container-absolute-title'>
-                        <h3> {product.brand}</h3>
+                        <h3 style={{fontSize: 12}}>{product.brand}</h3>
                         <h3 style={{fontSize: 12}}>{product.title}</h3>
                     </div>
 

@@ -71,6 +71,7 @@
 
 .container-data {
   padding: 2rem;
+  
 }
 
 .addToCar {
@@ -128,7 +129,6 @@
   justify-content: center;
   text-align: center;
   bottom: 0;
-  position: absolute;
   width: 100%;
 }
 
@@ -306,7 +306,7 @@
   }
   .container-absolute-title {
     position: absolute;
-    top: 7rem;
+    top: 9rem;
   }
   .container-superior {
     justify-content: center;
