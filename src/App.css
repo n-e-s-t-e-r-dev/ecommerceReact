@@ -130,6 +130,8 @@
   text-align: center;
   bottom: 0;
   width: 100%;
+  position: relative;
+  bottom: -10rem;
 }
 
 .container-social i {
@@ -173,7 +175,7 @@
 }
 
 .container-login {
-  padding: 4rem 13rem 0rem 13rem;
+  padding: 6rem 13rem 0rem 13rem;
   justify-content: center;
   align-items: center;
 }
@@ -246,6 +248,11 @@
   color: red;
 }
 
+.h3-total{
+  position:absolute;
+  left: 8.5rem;
+  bottom: 5rem;
+}
 @media (min-width: 570px) {
   .container-flex {
     display: grid;
