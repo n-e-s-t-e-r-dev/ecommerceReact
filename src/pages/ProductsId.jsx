@@ -100,11 +100,11 @@ const ProductsId = () => {
                                 src={category.images?.[0].url} alt="producto" />
 
                             <Card.Body className='card-body'>
-                                <Card.Title Text='secondary' className='title-reducer'><h3>{category.brand}</h3></Card.Title>
-                                <Card.Title className='title-reducer'><h3>{category.title}</h3> </Card.Title>
+                                <Card.Title Text='secondary' className='title-reducer'>< h3 style={{fontSize: 15}}>{category.brand}</h3></Card.Title>
+                                <Card.Title className='title-reducer'><h3 style={{fontSize: 14}}>{category.title}</h3> </Card.Title>
                                 <div className='container-car-price'>
                                     <div>
-                                        <Card.Text>
+                                        <Card.Text style={{fontSize: 14}}>
                                             Price: $ {category.price}
                                         </Card.Text>
                                     </div>
