@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { deleteProductCartThunk, getCartThunk, getPurchasesCartThunk } from '../store/slices/cartAdd.slice';
+import { deleteProductCartThunk, getCartThunk, getPurchasesCartThunk, updateProductThank } from '../store/slices/cartAdd.slice';
 
 
 const CarSliderBar = ({ show, handleClose }) => {
@@ -13,7 +13,6 @@ const CarSliderBar = ({ show, handleClose }) => {
     useEffect(() => {
         dispatch(getCartThunk())
     }, [])
-    console.log(cart)
     const checkOut = () => {
         alert("se intento comprar")
         axios.post(`https://e-commerce-api-v2.academlo.tech/api/v1/purchases/`)
@@ -29,6 +28,13 @@ const CarSliderBar = ({ show, handleClose }) => {
     const decrement = () => {
         setCounter(counter - 1)
     }
+    const incrementQuantity = (product) => {
+        dispatch(updateProductThank(product.id, product.quantity + 1));
+    };
+
+    const decrementQuantity = (product) => {
+        dispatch(updateProductThank(product.id, product.quantity - 1));
+    };
 
     return (
         <div>
@@ -47,7 +53,7 @@ const CarSliderBar = ({ show, handleClose }) => {
                                     </div>
                                     <div className='container-cart-title'>
                                         <h3>{product.product.title}</h3>
-                                        <button onClick={decrement} disabled={counter === 1}><i className='bx bx-minus'></i></button> {counter} <button onClick={increment}><i className='bx bx-plus'></i></button>
+                                        <button onClick={() => decrementQuantity(product)} disabled={product.quantity === 1}><i className='bx bx-minus'></i></button> {product.quantity} <button onClick={() =>incrementQuantity(product)}><i className='bx bx-plus'></i></button>
 
                                     </div>
                                     <div className='container-cart-trash'>

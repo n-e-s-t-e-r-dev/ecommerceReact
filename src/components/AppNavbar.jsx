@@ -22,9 +22,9 @@ const AppNavbar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto navbar-fixed-top">
-                            <Nav.Link as={Link} to="/Login">Login</Nav.Link>
+                            <Nav.Link as={Link} to="/Login"><i className='bx bx-user'></i></Nav.Link>
                             <Nav.Link as={Link} to="/Purchases">Purchases</Nav.Link>
-                            <Nav.Link onClick={handleShow}>Car</Nav.Link>
+                            <Nav.Link onClick={handleShow}><i className='bx bx-cart-alt'></i></Nav.Link>
                             <Nav.Link onClick={logout}>Log out</Nav.Link>
 
                         </Nav>

@@ -105,7 +105,6 @@
   display: flex;
   justify-content: space-between;
   bottom: 0rem;
- 
 }
 
 .container-image-similar {
@@ -128,6 +127,9 @@
   color: #fff;
   justify-content: center;
   text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .container-social i {
@@ -161,10 +163,10 @@
   padding-left: 1rem;
 }
 .container-product {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 .container-purchases {
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 .container-home {
   margin-top: 5rem;
@@ -193,58 +195,56 @@
 .cart-product-add h3 {
   font-size: 10px;
 }
-.container-cart-description{
-    display: flex;
+.container-cart-description {
+  display: flex;
 }
-.scroll{
-    height: 400px;
-    overflow-y: scroll;
+.scroll {
+  height: 400px;
+  overflow-y: scroll;
 }
-.container-buttom-cart-add{
-    position: static;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-buttom-cart-add {
+  position: static;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container-buttom-cart-add button{
-    border: none;
-    width: 8rem;
-    height: 3rem;
-    color: red;
-    background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.container-total-list{
-    height: 2rem;
-    display: flex;
-    
-}
-.container-total-list h3{
-    position: relative;
-    left: 10rem;
-    bottom: -8px;
-    text-align: center;
+.container-buttom-cart-add button {
+  border: none;
+  width: 8rem;
+  height: 3rem;
+  color: red;
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.container-img-cart img{
-    object-fit: contain;
+.container-total-list {
+  height: 2rem;
+  display: flex;
 }
-.container-cart-title{
-    padding: 0rem 0 0 1rem;
-    margin-top: 1rem;
-}
-.container-cart-title h3{
-    font-size: 10px;
-    width: 10rem;
-}
-.container-cart-trash button{
-    margin-top: 1rem;
-    border: none;
-    color: red;
+.container-total-list h3 {
+  position: relative;
+  left: 10rem;
+  bottom: -8px;
+  text-align: center;
 }
 
+.container-img-cart img {
+  object-fit: contain;
+}
+.container-cart-title {
+  padding: 0rem 0 0 1rem;
+  margin-top: 1rem;
+}
+.container-cart-title h3 {
+  font-size: 10px;
+  width: 10rem;
+}
+.container-cart-trash button {
+  margin-top: 1rem;
+  border: none;
+  color: red;
+}
 
 @media (min-width: 570px) {
   .container-flex {
@@ -315,7 +315,7 @@
     margin-top: 1rem;
   }
   /* Carousel*/
-  .item{
+  .item {
     padding: 2rem;
   }
   .item img {

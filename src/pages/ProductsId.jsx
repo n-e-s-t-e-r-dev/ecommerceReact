@@ -20,7 +20,6 @@ const ProductsId = () => {
         axios.get(`https://e-commerce-api-v2.academlo.tech/api/v1/products/${id}`)
             .then(res => {
                 setProduct(res.data)
-                console.log(res.data)
                 dispatch(productFilterCategory(res.data.categoryId
                 ))
             })
@@ -69,7 +68,7 @@ const ProductsId = () => {
                 <Col className='container-data' lg={6}>
                     <div className='container-absolute-title'>
                         <h3> {product.brand}</h3>
-                        <h3>{product.title}</h3>
+                        <h3 style={{fontSize: 12}}>{product.title}</h3>
                     </div>
 
                     <div className='container-absolute'>

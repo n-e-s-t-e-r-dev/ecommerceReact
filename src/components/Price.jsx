@@ -10,7 +10,6 @@ const Price = () => {
     const { register, handleSubmit } = useForm()
 
     const submit = (data) => {
-        console.log(price)
     };
 
     return (
