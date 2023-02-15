@@ -55,20 +55,20 @@ const ProductsId = () => {
                 <Col className='container-image' lg={6}>
                     <Carousel className='product-id-img' variant="dark">
                         <Carousel.Item className='item'>
-                            <img  src={product.images?.[0].url} alt="img-product" />
+                            <img src={product.images?.[0].url} alt="img-product" />
                         </Carousel.Item>
                         <Carousel.Item className='item'>
-                            <img  src={product.images?.[1].url} alt="img-product" />
+                            <img src={product.images?.[1].url} alt="img-product" />
                         </Carousel.Item>
                         <Carousel.Item className='item'>
-                            <img  src={product.images?.[2].url} alt="img-product" />
+                            <img src={product.images?.[2].url} alt="img-product" />
                         </Carousel.Item>
                     </Carousel>
                 </Col>
                 <Col className='container-data' lg={6}>
                     <div className='container-absolute-title'>
-                        <h3 style={{fontSize: 12}}>{product.brand}</h3>
-                        <h3 style={{fontSize: 12}}>{product.title}</h3>
+                        <h3 style={{ fontSize: 12 }}>{product.brand}</h3>
+                        <h3 style={{ fontSize: 12 }}>{product.title}</h3>
                     </div>
 
                     <div className='container-absolute'>
@@ -100,11 +100,11 @@ const ProductsId = () => {
                                 src={category.images?.[0].url} alt="producto" />
 
                             <Card.Body className='card-body'>
-                                <Card.Title Text='secondary' className='title-reducer'>< h3 style={{fontSize: 15}}>{category.brand}</h3></Card.Title>
-                                <Card.Title className='title-reducer'><h3 style={{fontSize: 14}}>{category.title}</h3> </Card.Title>
+                                <Card.Title Text='secondary' className='title-reducer'>< h3 style={{ fontSize: 15 }}>{category.brand}</h3></Card.Title>
+                                <Card.Title className='title-reducer'><h3 style={{ fontSize: 14 }}>{category.title}</h3> </Card.Title>
                                 <div className='container-car-price'>
                                     <div>
-                                        <Card.Text style={{fontSize: 14}}>
+                                        <Card.Text style={{ fontSize: 14 }}>
                                             Price: $ {category.price}
                                         </Card.Text>
                                     </div>
@@ -117,6 +117,15 @@ const ProductsId = () => {
                     </Col>
                 ))}
             </Row>
+            <div className='container-body'>
+                <h3>© Carlos Muñoz</h3>
+                <section className='container-social'>
+                    <a href="https://www.instagram.com/nesterlon/"><i className='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/NesTerLoN392"><i className='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/carlos-mu%C3%B1oz-cuellar-programador/"><i className='bx bxl-linkedin-square'  ></i></a>
+                </section>
+
+            </div>
 
 
         </div>

@@ -31,7 +31,6 @@ function App() {
           </Route>
         </Routes>
       </Container>
-      < Body />
     </HashRouter>
   )
 }
